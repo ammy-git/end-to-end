@@ -15,7 +15,7 @@ pipeline {
                 }
             }
         }
-        stage('Build Docker Image') {
+        stage('Build Docker Image from Dockerfile') {
             steps {
                 sh 'docker build -t demo-app:latest .'
             }
